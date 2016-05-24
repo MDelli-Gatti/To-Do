@@ -24,9 +24,7 @@ public class Main {
             tempItem.isDone = !tempItem.isDone;
         } catch (NumberFormatException e) {
             System.out.println("You didn't type a number!");
-        } catch (
-                ArrayIndexOutOfBoundsException e
-                )
+        } catch (ArrayIndexOutOfBoundsException e)
 
         {
             System.out.println("Number is not valid!");
@@ -40,7 +38,7 @@ public class Main {
             if (toDoItem.isDone) {
                 checkbox = "[x]";
             }
-            System.out.println(checkbox + " " + i + ". " + toDoItem.text);
+            System.out.printf("%s %s. %s\n",checkbox, i, toDoItem.text);
             i++;
         }
     }
